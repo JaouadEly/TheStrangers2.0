@@ -1,0 +1,47 @@
+<%-
+include('partials/header.ejs');
+%>
+ <section class="border-8 border-gray mb-10">
+    <input type="text" placeholder="Search.." class="w-full text-center py-2">
+ </section>
+ <% for(var i=0; i < bedrijven.length; i++) { %>
+    <section  class="w-3/4 mx-auto flex border-b-2 border-gray pb-4 mb-5 ">
+        <img src="public/images/gray_circle.png" class="image">
+
+        <section  class="w-10/12">
+        <table class="ml-2 table" >
+            <tr>
+                <td class="font-bold w-full bedrijfNaam ">
+                 <a class="bedrijfLink" href='/history/<%= bedrijven[i].referenceNumber %>'>  <%= bedrijven[i].name %></a>
+                </td>
+                <td class="text-[color:gray] bedrijfDatum"> <%= bedrijven[i].opzoekDatum %></td>
+            </tr>
+            <tr>
+                <td class="text-[color:gray]">
+                    <%= bedrijven[i].address.street %> 
+                    <%= bedrijven[i].address.number %> 
+                </td>
+            </tr>
+            <tr>
+                <td class="text-[color:gray]">
+                    <%= bedrijven[i].address.postalCode %> 
+                    <%= bedrijven[i].address.city %> 
+                </td>
+            </tr>
+        </table>
+
+        </section>
+
+     </section>
+
+    <% } %>
+ <section>
+</section>
+
+ <%-
+ include('partials/footer.ejs');
+ %>
+</body>
+<script src="assets/history.script.js"></script>
+<link rel="stylesheet" href="/style/history.style.css">
+</html>

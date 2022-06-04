@@ -1,0 +1,23 @@
+.table{
+    width: 100%;
+}
+
+.image{
+    width: 10%;
+    height: 10%;
+    margin: auto 0;
+}
+
+.bedrijfNaam{
+    width: 75%;
+}
+
+
+.bedrijfLink{
+    opacity: 0.7;
+}
+
+.bedrijfLink:hover{
+    opacity: 1;
+    text-decoration: underline;
+}

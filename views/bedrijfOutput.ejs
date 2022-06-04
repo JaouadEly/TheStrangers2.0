@@ -1,0 +1,71 @@
+<%-
+include('partials/header.ejs');
+%>
+
+
+ <%-
+ include('partials/searchBar.ejs');
+ %>
+
+ <section id="bedrijfForm" class="bedrijfOutput flex justify-between mt-10">
+  <table class="bedrijfTable mt-5 w-5/12 mx-auto  ">
+    <tr class="bedrijfRow flex">
+      <td class="bedrijfLabelNaam font-bold w-1/5" >Naam</td> <td id="naam_L" value='<%= bedrijfOutput.name %>' class="bedrijfLabelValue w-4/5"><%= bedrijfOutput.name %></td>
+    </tr>
+    <tr class="bedrijfRowBig flex">
+      <td class="bedrijfLabelNaam font-bold  w-1/5">Adres</td> <td class="bedrijfLabelValue  w-4/5"><%= bedrijfOutput.address.street %> <%= bedrijfOutput.address.number %></td>
+    </tr>
+    <tr class="bedrijfRowSmall flex">
+      <td class=" w-1/5"> </td> <td class="bedrijfLabelValue w-4/5"><%= bedrijfOutput.address.postalCode %> <%= bedrijfOutput.address.city %></td>
+    </tr>
+
+    <tr class= "bedrijfRowbedrijfRowSmall"><td class="h-5"></td></tr>
+          <tr class="bedrijfRow">
+            <td class="bedrijfLabelNaam font-bold">Datum neerlegging</td> <td class="bedrijfLabelValue text-right"><%= bedrijfOutput.depositDate %></td>
+          </tr>
+          <tr class="bedrijfRow">
+            <td class="bedrijfLabelNaam font-bold">Eigen vermogen</td> <td id="vermogen_L" class="bedrijfLabelValue text-right" value='<%= bedrijfOutput.eigenVermogen %>'><%= bedrijfOutput.eigenVermogen %></td>
+          </tr>
+          <tr class="bedrijfRow">
+            <td class="bedrijfLabelNaam font-bold">Schulden</td> <td id="schulden_L" class="bedrijfLabelValue text-right" value='<%= bedrijfOutput.schulden %>'><%= bedrijfOutput.schulden %></td>
+          </tr>
+          <tr class="bedrijfRow">
+            <td class="bedrijfLabelNaam font-bold">Bedrijfswinst</td class="text-right"> <td id="winst_L" class="bedrijfLabelValue text-right" value='<%= bedrijfOutput.bedrijfswinst %>'> <%= bedrijfOutput.bedrijfswinst %></td>
+          </tr>
+          </table>
+
+    <table class="bedrijfTable mt-5 w-5/12 mx-auto  ">
+      <tr class="bedrijfRow flex">
+        <td class="bedrijfLabelNaam font-bold w-1/5" >Naam</td> <td id="naam_R" value='<%= bedrijfOutput_2.name %>' class="bedrijfLabelValue w-4/5"><%= bedrijfOutput_2.name %></td>
+      </tr>
+      <tr class="bedrijfRowBig flex"> 
+        <td class="bedrijfLabelNaam font-bold  w-1/5">Adres</td> <td class="bedrijfLabelValue w-4/5"><%= bedrijfOutput_2.address.street %> <%= bedrijfOutput_2.address.number %></td>
+      </tr>
+      <tr class="bedrijfRowSmall flex">
+        <td class=" w-1/5"> </td> <td class="bedrijfLabelValue w-4/5"><%= bedrijfOutput_2.address.postalCode %> <%= bedrijfOutput_2.address.city %></td>
+      </tr>
+
+      <tr class= "bedrijfRowbedrijfRowSmall"><td class="h-5"></td></tr>
+      <tr class="bedrijfRow">
+        <td class="bedrijfLabelNaam font-bold">Datum neerlegging</td> <td class="bedrijfLabelValue  text-right"><%= bedrijfOutput_2.depositDate %></td>
+      </tr>
+      <tr class="bedrijfRow">
+        <td class="bedrijfLabelNaam font-bold">Eigen vermogen</td> <td id="vermogen_R" class="bedrijfLabelValue text-right" value='<%= bedrijfOutput_2.eigenVermogen %>'><%= bedrijfOutput_2.eigenVermogen %></td>
+      </tr>
+      <tr class="bedrijfRow">
+        <td class="bedrijfLabelNaam font-bold">Schulden</td> <td id="schulden_R" class="bedrijfLabelValue text-right" value='<%= bedrijfOutput_2.schulden %>'><%= bedrijfOutput_2.schulden %></td>
+      </tr>
+      <tr class="bedrijfRow">
+        <td class="bedrijfLabelNaam font-bold">Bedrijfswinst</td class="text-right" > <td class="bedrijfLabelValue text-right" id="winst_R" value='<%= bedrijfOutput_2.bedrijfswinst %>'><%= bedrijfOutput_2.bedrijfswinst %></td>
+      </tr>
+      </table>
+    </section>
+  
+ <%-
+ include('partials/footer.ejs');
+ %>
+  </body>
+  <script src="../../assets/vergelijk.script.js"></script>
+  </html>
+
+     

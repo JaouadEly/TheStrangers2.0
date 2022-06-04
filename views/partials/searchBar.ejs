@@ -1,0 +1,50 @@
+
+
+<form class="searchBar mx-auto flex flex-row justify-between ">
+    <div class="inputDiv basis-4/10">
+      <label class="label" for="Ondernemingsnummer_1">Ondernemingsnummer:</label>
+      <input value="Ondernemingsnummer_1" type="number" id="Ondernemingsnummer_1" name="Ondernemingsnummer_1" class="input" placeholder="0403101811">
+    </div>     
+    <div class="buttonDiv basis-1/10">
+      
+      <button value="mybutton1" onClick='test()' id="VergelijkButton" class="button" type="button">vergelijk</button>
+</div>
+<div class="inputDiv basis-4/10">
+    <label class="label" for="Ondernemingsnummer_2">Ondernemingsnummer:</label>
+    <input type="number" id="Ondernemingsnummer_2" name="Ondernemingsnummer_2" class="input" placeholder="0406603610">
+</div>
+</form>
+
+<script>
+  function showUserInput_1(){
+    let Ondernemingsnummer_1 = document.getElementById("Ondernemingsnummer_1").value;
+    return Ondernemingsnummer_1;
+}
+function showUserInput_2(){
+    let Ondernemingsnummer_1 = document.getElementById("Ondernemingsnummer_2").value;
+    return Ondernemingsnummer_1;
+}
+
+VergelijkButton.onclick = function(){
+    if(document.getElementById("Ondernemingsnummer_1").value.length != 10 || document.getElementById("Ondernemingsnummer_2").value.length != 10 )
+        {
+            alert(" Ongeldig ondernemingsnummer! Controleer je invoer: \n Bestaat het ondernemingsnummer uit exact 10 cijfers")
+        }
+    
+    else
+    {
+        showUserInput_1();
+        showUserInput_2();
+        
+      if(showUserInput_1 && showUserInput_2 ){
+        let url = 'http://localhost:3000/bedrijfOutput/' + showUserInput_1() + '/' + showUserInput_2() + '';
+        console.log(url);
+        location.href = url;
+      }else if(showUserInput_1 && !showUserInput_2 ){
+          console.log('enkel den eerste');
+      }
+
+    }
+}
+</script>
+

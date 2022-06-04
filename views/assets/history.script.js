@@ -1,0 +1,1 @@
+console.log("History Script geladen");

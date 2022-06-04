@@ -1,0 +1,228 @@
+
+
+@media screen and (max-width:960px) {
+    
+    /***** Global *****/
+
+
+   .bodyClass{
+       width: 100%;
+       
+     }
+     .containerClass{
+         padding-bottom: 2%;
+         display: block;
+     }
+
+      /***** Search bar *****/
+
+   .searchBar{
+       width: 100%;
+       display: inline-block;
+   }
+
+   .inputDiv{
+       width: 100%;
+       padding: 3% 0;
+   }
+
+   .input{ 
+       display: block;
+       float: none;
+       width: 50%;
+       margin: 0 auto;
+   }
+   .label{
+       display: block;
+       width: 50%;
+       padding: 0;
+       padding-bottom: 1%;
+       margin: 0 auto;
+   }
+
+   .buttonDiv{
+       width: 25%;
+       height: 10%;
+       margin: 0 auto;
+   }
+   .button{
+       margin-top: 20%;
+   }
+
+    /***** Bedrijf Output *****/
+
+   .bedrijfTable{
+       padding: 0 3%;
+   }
+
+   .bedrijfRow{
+       border-bottom: 1px solid black;
+       margin-bottom: 3%;
+       padding: 1%;
+       display: inline-block;
+       width: 100%;
+       position: relative;
+       height: 55px;
+       
+   }
+   .bedrijfRowSmall{
+       margin-bottom: 1%;
+       padding: 1%;
+       width: 100%;
+       position: relative;
+       height: 25px;
+   }
+
+
+   .bedrijfRowBig{
+       font-size:1rem;
+       padding: 1%;
+       width: 100%;
+       position: relative;
+       min-height: 25px;
+   }
+
+   .bedrijfLabelNaam{
+       font-size:x-small;
+       position:absolute;
+       padding: 0;
+       margin:0 ;
+       top:0;
+       left:0;
+   }
+
+   .bedrijfLabelValue{
+       font-size: smaller;
+       position:absolute;
+       bottom:0;
+       right:0;
+   }
+
+
+  /***** Bedrijf Output *****/
+
+ footer{
+   display: block;
+   position: relative;
+     padding-top: 10%;
+     margin-top: auto;
+     font-size: small;
+ }
+  
+
+}
+
+
+@media screen and (max-width:450px) {
+    
+     /***** Global *****/
+
+
+    .bodyClass{
+        width: 100%;
+        
+      }
+      .containerClass{
+          padding-bottom: 2%;
+          display: block;
+          border: none;
+      }
+
+       /***** Search bar *****/
+
+    .searchBar{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .inputDiv{
+        width: 100%;
+        padding: 3% 0;
+    }
+
+    .input{ 
+        display: block;
+        float: none;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .label{
+        display: block;
+        width: 50%;
+        padding: 0;
+        padding-bottom: 1%;
+        margin: 0 auto;
+    }
+
+    .buttonDiv{
+        width: 25%;
+        height: 10%;
+        margin: 0 auto;
+    }
+    .button{
+        margin-top: 20%;
+    }
+
+     /***** Bedrijf Output *****/
+
+    .bedrijfTable{
+        padding: 0 3%;
+    }
+
+    .bedrijfRow{
+        border-bottom: 1px solid black;
+        margin-bottom: 3%;
+        padding: 1%;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        height: 55px;
+        
+    }
+    .bedrijfRowSmall{
+        margin-bottom: 1%;
+        padding: 1%;
+        width: 100%;
+        position: relative;
+        height: 25px;
+    }
+
+
+    .bedrijfRowBig{
+        font-size:1rem;
+        margin-bottom: 20%;
+        padding: 1%;
+        width: 100%;
+        position: relative;
+        min-height: 75px;
+    }
+
+    .bedrijfLabelNaam{
+        font-size:x-small;
+        position:absolute;
+        padding: 0;
+        margin:0 ;
+        top:0;
+        left:0;
+    }
+
+    .bedrijfLabelValue{
+        font-size: smaller;
+        position:absolute;
+        bottom:0;
+        right:0;
+    }
+
+
+   /***** Bedrijf Output *****/
+
+  footer{
+    display: block;
+    position: relative;
+      padding-top: 10%;
+      margin-top: auto;
+      font-size: small;
+  }
+   
+
+}
